@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <packagings>
+            <packaging>war</packaging>
+            <packaging>ear</packaging>
+            <packaging>ejb</packaging>
+        </packagings>
+        <goals>
+            <goal>package</goal>
+            <goal>tomcat7:run</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>build</actionName>
+        <packagings>
+            <packaging>war</packaging>
+        </packagings>
+        <goals>
+            <goal>package</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>clean</actionName>
+        <packagings>
+            <packaging>war</packaging>
+        </packagings>
+        <goals>
+            <goal>clean</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>rebuild</actionName>
+        <packagings>
+            <packaging>war</packaging>
+        </packagings>
+        <goals>
+            <goal>clean</goal>
+            <goal>package</goal>
+            <goal>tomcat7:run</goal>
+        </goals>
+    </action>
+</actions>
